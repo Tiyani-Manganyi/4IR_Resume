@@ -1,0 +1,124 @@
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.list-item {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.modal {
+  display: none;
+}
+
+.block {
+  display: block;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+.resume {
+  margin: 20px;
+  margin-left: 50px;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 50px 20px;
+  height: 100vh; /* full viewport height */
+  overflow-y: auto;
+  background-color: #000; /* black background for sidebar */
+  color: white; /* white text color */
+}
+
+/* Sidebar links */
+.sidebar li {
+  display: block;
+  border: 1px solid #4f81c7;
+  padding: 16px;
+  font-size: 22px;
+  cursor: pointer;
+  list-style: none;
+  color: white; /* link color white */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Links on mouse-over */
+.sidebar li:hover {
+  background-color: white;
+  color: #000; /* text turns black on hover */
+}
+
+/* Page content */
+div.content {
+  padding: 1px 16px;
+}
+
+/* Responsive: On screens less than 992px wide, sidebar becomes a horizontal top bar */
+@media screen and (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    height: auto; /* remove fixed height */
+    background-color: #000;
+  }
+
+  .sidebar li {
+    float: left;
+    font-size: 20px;
+    border: none;
+    padding: 12px 16px;
+    color: white;
+  }
+
+  div.content {
+    margin-left: 0;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+  }
+
+  .resume {
+    margin: 1px;
+    margin-left: 10px;
+  }
+}
+
+/* Responsive: On screens less than 400px wide, display sidebar items vertically */
+@media screen and (max-width: 400px) {
+  .sidebar li {
+    text-align: center;
+    float: none;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+.input-style {
+  width: 100%;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 6px;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.input-style:focus {
+  border: 5px solid rgba(63, 136, 239, 0.4);
+  outline: none;
+}
+
+.image-aspect-ratio {
+  aspect-ratio: 0.9;
+}
+
+body {
+  background-image: url('/src/Components/image2.jpg'); /* or a full URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
